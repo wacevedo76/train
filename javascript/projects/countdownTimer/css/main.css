@@ -1,0 +1,24 @@
+#mainContainer {
+  width: 75vw;
+  height: 500px;
+  background-color: skyblue;
+  margin: 0 auto;
+  border-radius: 7px; 
+}
+
+#countdowntimerContainer {
+  background-color: skyblue;
+  width: 50vw;
+  margin: 1em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timerContainer {
+  margin: 2em auto;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
