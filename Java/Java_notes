@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+Java Notes
+--------------------------------------------------------------------------------
+Getting input (console)     | import java.util.Scanner    <-- scanner mode 
+                            |                                 top of file
+                            | 
+                            | Scanner scanner = new Scanner(System.in); 
+                            | (class) (var name)(class initializer)
+                            |
+                            |  (above is decleration)
+                            | String message = scanner.nextLine();
+                            |             (function call and assignment)
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
+                            |
