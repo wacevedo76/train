@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------
+Learn Lnux Shell Scripting - Fundamentals of Bash 4.4
+--------------------------------------------------------------------------------
+Top level directories        |
+  /bin/                      | Contains essential binaries used by normal users
+  /boot/                     | Contains files used i nthe boot process: kernel initramfs, bootloader
+  /dev/                      | Contains special files used to access devices
+  /etc/                      | Default location for software configuration files
+  /home/                     | Contains the home directories for normal users
+  /lib/                      | Contains system libraries
+  /lib64/                    | Contains 64bit system libraries
+  /media/                    | Removable devices such as USB and DVDs can be found here
+  /mnt/                      | Empty by default, can be used to mount other filesystems
+  /opt/                      | Directory where optional software can be installed
+  /proc/                     | Directory where information about proccesses is stored
+  /root/                     | The home directory of the root users
+  /run/                      | Contains variable data about run-time data. different each boot
+  /sbin/                     | Contains essential system binaris used by administrative users
+  /srv/                      | Director to place data to be served by the server
+  /sys/                      | Contains information about athe system, such as drivers and kernel features
+  /tmp/                      | Dir intended for temporary files, often cleared on reboot
+  /usr/                      | Contains non-essential files and binaries as read-only user data
+  /var/                      | Contains varialble files, such as logs
+--------------------------------------------------------------------------------
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
