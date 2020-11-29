@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Learn Lnux Shell Scripting - Fundamentals of Bash 4.4
+Learn Linux Shell Scripting - Fundamentals of Bash 4.4
 --------------------------------------------------------------------------------
 Top level directories        |
   /bin/                      | Contains essential binaries used by normal users
@@ -22,25 +22,33 @@ Top level directories        |
   /usr/                      | Contains non-essential files and binaries as read-only user data
   /var/                      | Contains varialble files, such as logs
 --------------------------------------------------------------------------------
+Understanding the Linux      | Commands covered in is chapert are 
+Permissions Scheme           |   id, touch, chmod, umask, chown, chgrop, sudo, 
+                             |   useradd, groupad, mkdir, and su
+--------------------------------------------------------------------------------
+Advanced permissions         | Other file attribtes include immutable undeletable, 
+                             | append only, and compress
                              |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
+                             | commands are:  lsattr and chattr
+--------------------------------------------------------------------------------
+Special file permissions     | SUID = 4, SGID = 2, Sticky bit = 1
+                             |      | Files                       | Directories
+                             |--------------------------------------------------
+                             | SUID | Files are executed with the | does nothing   
+                             |      | permissions of the owner,   |                                         |
+                             |      | regardless of which user    |               
+                             |      | executes it.                |                
+                             |--------------------------------------------------
+                             | SGID | Files are executed with the | Files that are created in this                
+                             |      | permissions of the group,   | director get the same group as
+                             |      | regardless of which user    | The directory              
+                             |      | executes it                 |               
+                             |--------------------------------------------------
+                             |sticky| does nothing                | User can only delete their own
+                             |bit   |                             | files within this directory. see
+                             |      |                             | the /tmp/ director for its most
+                             |      |                             | famous use.   
+--------------------------------------------------------------------------------
                              |
                              |
                              |
