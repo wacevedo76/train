@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Learn Linux Shell Scripting - Fundamentals of Bash 4.4
+Learn Linux Shell Scripting - Fundamentals of Bash 4.4 : (Variables or constants)
 --------------------------------------------------------------------------------
 Top level directories        |
   /bin/                      | Contains essential binaries used by normal users
@@ -49,8 +49,8 @@ Special file permissions     | SUID = 4, SGID = 2, Sticky bit = 1
                              |      |                             | the /tmp/ director for its most
                              |      |                             | famous use.   
 --------------------------------------------------------------------------------
-                             |
-                             |
+evaluating math, dealing with| $(( numeric_variable + 1 ))
+numbers                      |
                              |
                              |
                              |
