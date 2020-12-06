@@ -1,6 +1,21 @@
 --------------------------------------------------------------------------------
 Learn Linux Shell Scripting - Fundamentals of Bash 4.4 : (Variables or constants)
 --------------------------------------------------------------------------------
+Cheat-Sheet from https://ss64.com/bash/syntax-brackets.html
+--------------------------------------------------------------------------------
+Group and expand expressions |
+                             |
+  Group commands - subshell  | ()
+                             | Grouping a (list of commands) in parentheses 
+                             | causes them to be executed as if they were a single
+                             | unit. When commands are gre grouped redirections 
+                             | can be applied to the entire command lits. for 
+                             | example, the output of all the commands in the list
+                             | can be redirected to a single stream
+                             |
+  Current shell - group comm | {}
+                             |
+--------------------------------------------------------------------------------
 Top level directories        |
   /bin/                      | Contains essential binaries used by normal users
   /boot/                     | Contains files used i nthe boot process: kernel initramfs, bootloader
@@ -99,7 +114,7 @@ tests and return values      |
                              | for bug trackng
                              |
 --------------------------------------------------------------------------------
-                             |
+Regular expressions          |
                              |
                              |
                              |
