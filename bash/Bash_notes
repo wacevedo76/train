@@ -115,7 +115,32 @@ tests and return values      |
                              |
 --------------------------------------------------------------------------------
 Regular expressions          |
+  grep                       |
+    -i                       | Allows us to search case-insensitifely
+    -v                       | Only printsline that are not matched, instead of matche
                              |
+  grep regex are enclosed in |
+  ''                         | . - matches any one character (except a newline)
+                             | * - matches any number of repeats of the preceeding character
+                             | [] - used to narrow our substitution ot a certain
+                             |      character set
+                             |      [ao] - maches a or  o
+                             |      [a-z] - maches any character between a - z
                              |
+  Line anchors               | ^ - used to match a pattern at the beginning of 
+                             |     a line
+                             | $ = used ot match a patteran at the end of  a 
+                             |     line
                              |
+Character classes            |
+  [[:alnum:]]                | Matches lowercase and uppercase leters or digents  [a-z A-Z 0-9]
                              |
+  [[:alpha:]]                | matches lowercase and uppercase letters            [a-z A-Z]]
+                             |
+  [[:digit:]]                | Matches digits                                     [0-9]
+                             |
+  [[:lower:]]                | Matches lowercase letters                          [a-z]
+  [[:upper:]]                | Matches uppercase letters                          [A-Z]
+  [[:blank:]]                | Matches spaces and tabls                           [\t]
+                             |
+--------------------------------------------------------------------------------
