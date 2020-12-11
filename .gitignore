@@ -1,3 +1,6 @@
 # vim / vim session files
 *.vim
 */*.vim
+
+# pycache
+*/__pycache__
