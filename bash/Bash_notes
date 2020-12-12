@@ -129,7 +129,7 @@ Regular expressions          |
                              |
   Line anchors               | ^ - used to match a pattern at the beginning of 
                              |     a line
-                             | $ = used ot match a patteran at the end of  a 
+                             | $ = used to match a pattern at the end of  a 
                              |     line
                              |
 Character classes            |
@@ -144,3 +144,17 @@ Character classes            |
   [[:blank:]]                | Matches spaces and tabls                           [\t]
                              |
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+egrep                        |
+  ?                          | matches a repeat of the previous character zero or more times
+  +                          | Matches a repeat of the previous character one or more times
+  {n}                        | Matches a repeat of the previous character exactly n times
+  {n,m}                      | Matches a repeat of the previous character between n and n times
+  {,n}                       | Matches a repeat of previous character n or fewer times
+  {n,}                       | Matches a repeat of the previous character n or more times
+  (xx|yy)                    | Alternation character, allows us to fine xx OR y in the search
+                             | pattern (great for patters with more than one character, 
+                             | otherwise, [xy] notion would suffice)
+                             |
+                             |
+                             |
