@@ -18,7 +18,7 @@ Group and expand expressions |
 --------------------------------------------------------------------------------
 Top level directories        |
   /bin/                      | Contains essential binaries used by normal users
-  /boot/                     | Contains files used i nthe boot process: kernel initramfs, bootloader
+  /boot/                     | Contains files used in the boot process: kernel initramfs, bootloader
   /dev/                      | Contains special files used to access devices
   /etc/                      | Default location for software configuration files
   /home/                     | Contains the home directories for normal users
@@ -32,7 +32,7 @@ Top level directories        |
   /run/                      | Contains variable data about run-time data. different each boot
   /sbin/                     | Contains essential system binaris used by administrative users
   /srv/                      | Director to place data to be served by the server
-  /sys/                      | Contains information about athe system, such as drivers and kernel features
+  /sys/                      | Contains information about a the system, such as drivers and kernel features
   /tmp/                      | Dir intended for temporary files, often cleared on reboot
   /usr/                      | Contains non-essential files and binaries as read-only user data
   /var/                      | Contains varialble files, such as logs
@@ -174,5 +174,14 @@ sed                          |
   in-place change and backup | -i'file_extension' {pattern}
                              | -i'.bak' 's/wicked/stupid/g' file.txt
                              |
+  Line delete                | sed 'd' | '/word/1d'  --< deletes line where word appears
                              |
-
+  Line print                 | sed '/ERROR/p' will print two lines if default
+                             | behavior is not surpressed (-n)
+                             |
+  quiet (surpresses default) | -n --quiet
+    print behavror           |
+                             |
+  Run multi script on one    | -e
+  stream                     |
+--------------------------------------------------------------------------------
