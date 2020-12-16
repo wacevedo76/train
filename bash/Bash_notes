@@ -142,8 +142,6 @@ Character classes            |
   [[:lower:]]                | Matches lowercase letters                          [a-z]
   [[:upper:]]                | Matches uppercase letters                          [A-Z]
   [[:blank:]]                | Matches spaces and tabls                           [\t]
-                             |
---------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 egrep                        |
   ?                          | matches a repeat of the previous character zero or more times
@@ -155,6 +153,26 @@ egrep                        |
   (xx|yy)                    | Alternation character, allows us to fine xx OR y in the search
                              | pattern (great for patters with more than one character, 
                              | otherwise, [xy] notion would suffice)
+--------------------------------------------------------------------------------
+sed                          |
+  Search and replace         | s/ (beginning of string)
+                             | sed 's/wicked/stupid/'
+                             | note: by default, sed only replace the first 
+                             | instance of each word for each line.
+                             | sed does not match only on whole words, but also
+                             | partial words.
+                             |
+  Global action              | /g (end of string)
+                             | set 's/wicked/stupid/g'
+                             |
+  Operation by line number   | 'n,n{option}'
+                             | sed '1,2s/wicked/stupid/g'
+                             |
+  In-place (chages the file) | -i / --in-place
+                             | sed -i 's/wicked/stupid/g' file.txt
+                             |
+  in-place change and backup | -i'file_extension' {pattern}
+                             | -i'.bak' 's/wicked/stupid/g' file.txt
                              |
                              |
-                             |
+
