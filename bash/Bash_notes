@@ -132,6 +132,8 @@ Regular expressions          |
                              | $ = used to match a pattern at the end of  a 
                              |     line
                              |
+  Limit to words             | -w
+                             |
 Character classes            |
   [[:alnum:]]                | Matches lowercase and uppercase leters or digents  [a-z A-Z 0-9]
                              |
