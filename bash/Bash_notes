@@ -145,6 +145,15 @@ Character classes            |
   [[:upper:]]                | Matches uppercase letters                          [A-Z]
   [[:blank:]]                | Matches spaces and tabls                           [\t]
 --------------------------------------------------------------------------------
+Globbing                     |
+    Match zero or more times | *
+                             |
+    Any character once       | ?
+                             |
+    Any of a group of        | [abcde]
+    one or a group of chars  |
+                             |
+--------------------------------------------------------------------------------
 egrep                        |
   ?                          | matches a repeat of the previous character zero or more times
   +                          | Matches a repeat of the previous character one or more times
@@ -186,4 +195,16 @@ sed                          |
                              |
   Run multi script on one    | -e
   stream                     |
+--------------------------------------------------------------------------------
+Conditional Testing and Scripting Loops
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
 --------------------------------------------------------------------------------
