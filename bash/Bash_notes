@@ -8,7 +8,7 @@ Group and expand expressions |
   Group commands - subshell  | ()
                              | Grouping a (list of commands) in parentheses 
                              | causes them to be executed as if they were a single
-                             | unit. When commands are gre grouped redirections 
+                             | unit. When commands are pre grouped redirections 
                              | can be applied to the entire command lits. for 
                              | example, the output of all the commands in the list
                              | can be redirected to a single stream
