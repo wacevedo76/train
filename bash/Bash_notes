@@ -15,6 +15,14 @@ Group and expand expressions |
                              |
   Current shell - group comm | {}
                              |
+  Command substitution       | $(command(s))
+                             |
+  parameter substitution     | ${parameter(s)}
+                             |
+                             |
+                             |
+                             |
+                             |
 --------------------------------------------------------------------------------
 Top level directories        |
   /bin/                      | Contains essential binaries used by normal users
