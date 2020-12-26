@@ -205,14 +205,29 @@ sed                          |
   stream                     |
 --------------------------------------------------------------------------------
 Conditional Testing and Scripting Loops
+  While loop                 | while true; do
+                             | done
                              |
+  Until loop                 | until [[ ${counter} -gt 9 ]]; do
+                             | done
                              |
+  for in loop                | for word in ${words}; do
+                             | done
                              |
+  for in range               | for counter in (1..10); do
+                             | done
                              |
+                             | for letter in (a..z); do
+                             | done
                              |
+                             | ((;;)); do  <-- infinite loop
+                             | done
                              |
-                             |
-                             |
-                             |
-                             |
+  for (traditional) loop     | for ((counter=0; counter<=10; counter++)); do
+                             | done
 --------------------------------------------------------------------------------
+Globbing and the loop
+--------------------------------------------------------------------------------
+  looping through files in   | for file in $(ls /var/log/*.log); do
+  a directory                | done
+                             |
