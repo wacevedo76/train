@@ -125,7 +125,7 @@ tests and return values      |
 Regular expressions          |
   grep                       |
     -i                       | Allows us to search case-insensitifely
-    -v                       | Only printsline that are not matched, instead of matche
+    -v                       | Only prints line that are not matched, instead of matche
                              |
   grep regex are enclosed in |
   ''                         | . - matches any one character (except a newline)
@@ -225,9 +225,19 @@ Conditional Testing and Scripting Loops
                              |
   for (traditional) loop     | for ((counter=0; counter<=10; counter++)); do
                              | done
---------------------------------------------------------------------------------
-Globbing and the loop
---------------------------------------------------------------------------------
+Globbing and the loop        |
   looping through files in   | for file in $(ls /var/log/*.log); do
-  a directory                | done
+  a directory with glob      | done
+                             |
+  Break                      | break (default) <-- break out current loop
+                             | break 1         <-- break out current loop
+                             | break 2         <-- break out current loop and enclosing loop
+                             |
+  Continue                   | skip current iteration of loop, continue to next
+--------------------------------------------------------------------------------
+Using Pipes and Redirection  |
+  File descriptors           | 
+    standard input stream    | stdin (default binding) /dev/fd/0
+    standard output stream   | stdout (default )       /dev/fd/1
+    standard error stream    | stderr (default)        /dev/fd/2
                              |
