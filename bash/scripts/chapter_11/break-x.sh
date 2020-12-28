@@ -2,7 +2,7 @@
 
 ################################################################################
 # Author: Sebastiaan Tammer
-# Version: v1.0.0
+# Version: v1.1.0
 # Date: Fri Dec 25 2020
 # Description: Breaking out of nested loops.
 # Usage: ./break-x.sh
@@ -14,6 +14,9 @@ while true; do
   
   for iteration in {1..3}; do
     echo "Tis is inner loop ${iteration}."
+    if [[ ${iteration} -eq 2 ]]; then
+      break 2
+    fi
     sleep 1
   done
 done
