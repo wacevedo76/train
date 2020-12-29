@@ -241,3 +241,19 @@ Using Pipes and Redirection  |
     standard output stream   | stdout (default )       /dev/fd/1
     standard error stream    | stderr (default)        /dev/fd/2
                              |
+                             |
+    redirect stdin           | < (<0)
+                             |
+    redirect stdout overwrite| >  (1>)  
+    redirect stdout append   | >>  (1>>)  
+    redirect stderr overwrite| 2>
+    redirect stderr append   | 2>>
+    redirect both            | (bash 3.x) 2>&1   
+                             | (bash 4.x ~>) &>
+                             |
+  Special devices            |
+                             | /dev/null    -> output send here dissappears
+                             | /dev/zero    -> outputs null characters (fallocate --length 1024 {filename} same)
+                             | /dev/random  -> only generates when there is enough "entropy"
+                             | /dev/urandom -> better for scripting
+                             |
