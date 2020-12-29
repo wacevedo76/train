@@ -269,4 +269,4 @@ Using Pipes and Redirection  |
                              | another
                              | |
                              |
-                             |
+    redirect output & error  | |&
