@@ -257,3 +257,16 @@ Using Pipes and Redirection  |
                              | /dev/random  -> only generates when there is enough "entropy"
                              | /dev/urandom -> better for scripting
                              |
+  Command substitution       | Evalutates a command or list of commands, its result can be used
+                             | as an argument for other commands 
+                             | $()
+                             |
+  Process substitution       | Evaluates a command or a list of commands, its result can be referenced
+                             | as a file to for other commands
+                             | <()
+                             |
+  Pipes                      | Connects the standard output of one command to the standard input of 
+                             | another
+                             | |
+                             |
+                             |
