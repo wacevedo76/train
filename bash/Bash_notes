@@ -270,3 +270,17 @@ Using Pipes and Redirection  |
                              | |
                              |
     redirect output & error  | |&
+                             |
+  Here docs                  | << {end identifier} --> cat << EOF
+    these are used to supply |
+    commands with multi      | {end identifier}
+    multi lines              |
+                             |
+    variables are interpola- | cat << 'EOF' --> variables are not interpolated
+    ted, but you can surpres-|
+    se this by quoting the   |
+    end identifier           |
+                             |
+  Here strings               | <<< # used to send a string to a command which normaly only takes
+                             |     input from stdin
+                             |
