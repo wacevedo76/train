@@ -23,4 +23,3 @@ for ((i=0; i<5; i++)); do
   sleep 5
   clear;
 done
-

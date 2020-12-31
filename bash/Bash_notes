@@ -3,7 +3,7 @@ Learn Linux Shell Scripting - Fundamentals of Bash 4.4 : (Variables or constants
 --------------------------------------------------------------------------------
 Cheat-Sheet from https://ss64.com/bash/syntax-brackets.html
 --------------------------------------------------------------------------------
-Group and expand expressions |
+Group and expand expressions
                              |
   Group commands - subshell  | ()
                              | Grouping a (list of commands) in parentheses 
@@ -24,7 +24,7 @@ Group and expand expressions |
                              |
                              |
 --------------------------------------------------------------------------------
-Top level directories        |
+Top level directories
   /bin/                      | Contains essential binaries used by normal users
   /boot/                     | Contains files used in the boot process: kernel initramfs, bootloader
   /dev/                      | Contains special files used to access devices
@@ -45,16 +45,19 @@ Top level directories        |
   /usr/                      | Contains non-essential files and binaries as read-only user data
   /var/                      | Contains varialble files, such as logs
 --------------------------------------------------------------------------------
-Understanding the Linux      | Commands covered in is chapert are 
+Understanding the Linux
+                             | Commands covered in is chapert are 
 Permissions Scheme           |   id, touch, chmod, umask, chown, chgrop, sudo, 
                              |   useradd, groupad, mkdir, and su
 --------------------------------------------------------------------------------
-Advanced permissions         | Other file attribtes include immutable undeletable, 
+Advanced permissions
+                             | Other file attribtes include immutable undeletable, 
                              | append only, and compress
                              |
                              | commands are:  lsattr and chattr
 --------------------------------------------------------------------------------
-Special file permissions     | SUID = 4, SGID = 2, Sticky bit = 1
+Special file permissions
+                             | SUID = 4, SGID = 2, Sticky bit = 1
                              |      | Files                       | Directories
                              |--------------------------------------------------
                              | SUID | Files are executed with the | does nothing   
@@ -72,10 +75,10 @@ Special file permissions     | SUID = 4, SGID = 2, Sticky bit = 1
                              |      |                             | the /tmp/ director for its most
                              |      |                             | famous use.   
 --------------------------------------------------------------------------------
-evaluating math, dealing with| $(( numeric_variable + 1 ))
-numbers                      |
+evaluating math, dealing with numbers
+                             | $(( numeric_variable + 1 ))
 --------------------------------------------------------------------------------
-User input                   |
+User input
     Arguments and parameters | when executing a script interactively, an 
                              | argument is any "word" entered after the name of 
                              | script. eg.
@@ -93,7 +96,7 @@ User input                   |
                              | 
       testing for default    | [[ -z ${test_var} ]]; then read -p "assign test_var" test_var
 --------------------------------------------------------------------------------
-tests and return values      |
+tests and return values
   test                       | the test command is used to check file types and
                              | compare values
                              |
@@ -122,7 +125,7 @@ tests and return values      |
                              | for bug trackng
                              |
 --------------------------------------------------------------------------------
-Regular expressions          |
+Regular expressions
   grep                       |
     -i                       | Allows us to search case-insensitifely
     -v                       | Only prints line that are not matched, instead of matche
@@ -153,7 +156,7 @@ Character classes            |
   [[:upper:]]                | Matches uppercase letters                          [A-Z]
   [[:blank:]]                | Matches spaces and tabls                           [\t]
 --------------------------------------------------------------------------------
-Globbing                     |
+Globbing
     Match zero or more times | *
                              |
     Any character once       | ?
@@ -162,7 +165,7 @@ Globbing                     |
     one or a group of chars  |
                              |
 --------------------------------------------------------------------------------
-egrep                        |
+egrep
   ?                          | matches a repeat of the previous character zero or more times
   +                          | Matches a repeat of the previous character one or more times
   {n}                        | Matches a repeat of the previous character exactly n times
@@ -173,7 +176,7 @@ egrep                        |
                              | pattern (great for patters with more than one character, 
                              | otherwise, [xy] notion would suffice)
 --------------------------------------------------------------------------------
-sed                          |
+sed
   Search and replace         | s/ (beginning of string)
                              | sed 's/wicked/stupid/'
                              | note: by default, sed only replace the first 
@@ -235,7 +238,7 @@ Globbing and the loop        |
                              |
   Continue                   | skip current iteration of loop, continue to next
 --------------------------------------------------------------------------------
-Using Pipes and Redirection  |
+Using Pipes and Redirection
   File descriptors           | 
     standard input stream    | stdin (default binding) /dev/fd/0
     standard output stream   | stdout (default )       /dev/fd/1
@@ -283,4 +286,20 @@ Using Pipes and Redirection  |
                              |
   Here strings               | <<< # used to send a string to a command which normaly only takes
                              |     input from stdin
+--------------------------------------------------------------------------------
+Functions
+  Covered commands: top, free declare, case, rev, return
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
                              |
