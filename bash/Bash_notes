@@ -289,17 +289,37 @@ Using Pipes and Redirection
 --------------------------------------------------------------------------------
 Functions
   Covered commands: top, free declare, case, rev, return
+  Function declarations      | function_name() {
+                             |   Indented-commands
+                             | }
+                             |
+                             | function function_name() {
+                             |   intended-commands
+                             | }
+                             |
+  Scope                      |
+    define local variables   | local function_variable = 'test'
+                             |
+  Case statement             | case ${color} in
+                             |   red)
+                             |     color_code='red'
+                             |   blue)
+                             |     color_code='blue'
+                             |   *()
+                             |     color_code='default'
                              |
                              |
                              |
                              |
                              |
+  Scope                      |
+    define local variables   | local function_variable = 'test'
                              |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
-                             |
+  Case statement             | case ${color} in
+                             |   red)
+                             |     color_code='red'
+                             |   blue)
+                             |     color_code='blue'
+                             |      *)
+                             |     color_code='default'
                              |
