@@ -322,4 +322,7 @@ Functions
                              |     color_code='blue'
                              |      *)
                              |     color_code='default'
+--------------------------------------------------------------------------------
+Scheduling and Logging
+  Commands: at, wall, atq, atrm, sendmail, crontab, alias
                              |
