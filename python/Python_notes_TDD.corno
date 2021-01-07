@@ -13,7 +13,7 @@ Using virtualenv             | virtualenv is a tool used to install dependencies
     (small English model)    |
                              | load model -> spacy.load('en_core_web_sm')
                              |
-  flask                      | <setup.py>
+  Set directory as a package | <setup.py>
                              |
                              | from distutils.core import setup
                              | from setuptools import find_packages
