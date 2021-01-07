@@ -60,20 +60,20 @@ Special file permissions
                              | SUID = 4, SGID = 2, Sticky bit = 1
                              |      | Files                       | Directories
                              |--------------------------------------------------
-                             | SUID | Files are executed with the | does nothing   
-                             |      | permissions of the owner,   |                                         |
-                             |      | regardless of which user    |               
-                             |      | executes it.                |                
+                             | SUID | Files are executed with the | does nothing 
+                             |      | permissions of the owner,   |
+                             |      | regardless of which user    |
+                             |      | executes it.                |
                              |--------------------------------------------------
-                             | SGID | Files are executed with the | Files that are created in this                
+                             | SGID | Files are executed with the | Files that are created in this
                              |      | permissions of the group,   | director get the same group as
-                             |      | regardless of which user    | The directory              
-                             |      | executes it                 |               
+                             |      | regardless of which user    | The directory
+                             |      | executes it                 |
                              |--------------------------------------------------
                              |sticky| does nothing                | User can only delete their own
                              |bit   |                             | files within this directory. see
                              |      |                             | the /tmp/ director for its most
-                             |      |                             | famous use.   
+                             |      |                             | famous use.
 --------------------------------------------------------------------------------
 evaluating math, dealing with numbers
                              | $(( numeric_variable + 1 ))
