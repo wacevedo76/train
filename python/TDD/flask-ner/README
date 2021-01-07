@@ -1,0 +1,14 @@
+--------------------------------------------------------------------------------
+Python TDD - Named Entity Recognition API 
+--------------------------------------------------------------------------------
+This project was directly taken from:
+  TDD Full Course (Learn Test Driven Development with Python)
+  Author: Wes Doyle
+  https://www.youtube.com/watch?v=eAPmXQ0dC7Q
+
+This project used virtualenv as its dependency isolation framework/enviornment
+Dependencies 
+  * flask
+  * selenium
+  * spacy
+  * pytest
