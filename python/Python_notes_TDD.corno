@@ -9,11 +9,21 @@ Using virtualenv             | virtualenv is a tool used to install dependencies
                              | 2. run "virtualenv env -p python3"
                              | 3. start env with "source env/bin/activate"
                              |
-  spacy                      | python -m spacy download en_core_web_sm
-    (small English model)    |
+  Activate the enviornment   | source env/bin/activate
+                             |
+  Install dependencies       | pip install [modules]
+                             | pin install spacy selenium pytest flask
+                             |
+spacy                        | python -m spacy download en_core_web_sm
+  (small English model)      |
                              | load model -> spacy.load('en_core_web_sm')
                              |
-  Set directory as a package | <setup.py>
+Create directory structure   | mkdir static templates test
+                             |   static - serves javascript, css
+                             |   template - serves index.html flask template
+                             |   test - unit tests
+                             |  
+Set directory as a package   | <setup.py>
                              |
                              | from distutils.core import setup
                              | from setuptools import find_packages
