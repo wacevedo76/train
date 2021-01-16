@@ -1,0 +1,16 @@
+#to_do_form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#to_do_list {
+  border: solid black 1px;
+  border-radius: 5px;
+  height: 20em;
+  width: 30em;
+}
+
+#to_do_input {
+  margin: 0.5em 0;
+}
