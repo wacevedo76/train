@@ -9,8 +9,29 @@
   border-radius: 5px;
   height: 20em;
   width: 30em;
+  padding: 0 1em;
 }
 
 #to_do_input {
   margin: 0.5em 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.taskItem {
+  display: flex;
+  margin: 0.5em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskItem > p {
+  margin: 0;
+  padding: 0;
 }
