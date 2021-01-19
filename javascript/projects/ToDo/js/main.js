@@ -30,7 +30,7 @@
     // TaskItem Description
     const newElementDescription = document.createElement('p');
     newElementDescription.textContent = taskObject.value;
-    
+
     // TaskItem Buttons Container
     const newElementButtonContainer = document.createElement('div');
     newElementButtonContainer.className = 'buttonContainer';
@@ -51,9 +51,7 @@
     newElementDoneCheckbox.id = 'checkbox-' + taskObject.id;
     newElementDoneCheckbox.name = 'done';
 
-    // ToDo: add a delete button
     // ToDo: set a hidden update field
-    // ToDo: add an update button
 
     // Construct Button Container
     newElementButtonContainer.appendChild(newElementEditButton);
@@ -81,7 +79,13 @@
     if(e.target.type == 'submit' || e.target.type == 'undefined'){
       e.preventDefault();
     }
-    console.log(`${e.target.value} | ${e.target.parentElement.parentElement.id}`);
+    // Testing line
+    // console.log(`${e.target.parentElement.parentElement.id}`);
+
+    // Delete task item
+    if(e.target.value == 'delete'){
+      e.target.parentElement.parentElement.remove();
+    }
   });
 
   // Decare form event listener
