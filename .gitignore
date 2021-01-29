@@ -1,9 +1,8 @@
 # vim / vim session files
-*.vim
-*/*.vim
+**/*.vim
 
 # pycache
-*/__pycache__
+**/__pycache__
 
 # scrap files
-*/scrap
+**/scrap
