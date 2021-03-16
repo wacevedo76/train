@@ -289,6 +289,7 @@ Using Pipes and Redirection
 --------------------------------------------------------------------------------
 Functions
   Covered commands: top, free declare, case, rev, return
+<<<<<<< Updated upstream
   Function declarations      | function_name() {
                              |   Indented-commands
                              | }
@@ -307,11 +308,17 @@ Functions
                              |     color_code='blue'
                              |   *()
                              |     color_code='default'
+=======
+                             |
+                             |
+                             |
+>>>>>>> Stashed changes
                              |
                              |
                              |
                              |
                              |
+<<<<<<< Updated upstream
   Scope                      |
     define local variables   | local function_variable = 'test'
                              |
@@ -325,4 +332,11 @@ Functions
 --------------------------------------------------------------------------------
 Scheduling and Logging
   Commands: at, wall, atq, atrm, sendmail, crontab, alias
+=======
+                             |
+                             |
+                             |
+                             |
+                             |
+>>>>>>> Stashed changes
                              |

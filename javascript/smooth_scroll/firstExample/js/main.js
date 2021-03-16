@@ -1,6 +1,7 @@
 initSmoothScrolling();
 
 function initSmoothScrolling() {
+  // Smooth scrolling support check
   if (isCssSmoothSCrollSupported()) {
     document.getElementById('css-support-msg').className = 'supported';
     return;
@@ -19,6 +20,7 @@ function initSmoothScrolling() {
     document.body.addEventListener('click', onClick, false);
 
     function onClick(e) {
+      console.log(e);
       if (!isInPageLink(e.target))
         return;
 
