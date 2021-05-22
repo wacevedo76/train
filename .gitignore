@@ -6,3 +6,7 @@
 
 # scrap files
 **/scrap
+python/Selenium/Automation01/bin
+python/Selenium/Automation01/lib
+python/Selenium/Automation01/include
+python/Selenium/Automation01/lib64
