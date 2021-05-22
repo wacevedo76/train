@@ -10,3 +10,6 @@ python/Selenium/Automation01/bin
 python/Selenium/Automation01/lib
 python/Selenium/Automation01/include
 python/Selenium/Automation01/lib64
+
+python/TDD/flask-ner/env
+python/TDD/flask-ner/__pycache__
