@@ -10,10 +10,10 @@ import (
 // Create a new type of 'deck'
 // which is a slice of strings
 
-type deck []string
+type deck []string // <-- deck definition, defined as slice of type string
 
 func newDeck() deck {
-	cards := deck{}
+	cards := deck{} // <-- defined in line 3, assigne an empty slice
 
 	cardSuits := []string{"Spades", "Hearts", "Diamonds", "Clubs"}
 	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
